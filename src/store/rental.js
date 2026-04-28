@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 import axios from "axios";
 
 // ✅ FIX: Fallback so API is never undefined even if env var is missing
-const BASE = import.meta.env.VITE_API_URL || "/api/rentals";
+const BASE = import.meta.env.VITE_API_URL + "/api/rentals";
 const API = `${BASE}/records`;
 const TELEGRAM_API = `${BASE}/telegram`;
 
